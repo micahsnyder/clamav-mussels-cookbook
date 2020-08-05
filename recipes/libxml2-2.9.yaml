@@ -83,7 +83,7 @@ platforms:
         license/libxml2:
           - COPYING
       required_tools:
-        - visualstudio>=2017
+        - visualstudio>=2019
     x86:
       build_script:
         configure: |
@@ -105,4 +105,4 @@ platforms:
         license/libxml2:
           - COPYING
       required_tools:
-        - visualstudio>=2017
+        - visualstudio>=2019

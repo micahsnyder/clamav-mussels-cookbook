@@ -75,7 +75,7 @@ platforms:
     x64:
       build_script:
         configure: |
-          CALL cmake.exe -G "Visual Studio 15 2017" -A x64
+          CALL cmake.exe -G "Visual Studio 16 2019" -A x64
         make: |
           CALL cmake.exe --build . --config Release
       dependencies: []
@@ -90,11 +90,11 @@ platforms:
       patches: patches_windows
       required_tools:
         - cmake
-        - visualstudio=2017
+        - visualstudio=2019
     x86:
       build_script:
         configure: |
-          CALL cmake.exe -G "Visual Studio 15 2017" -A Win32
+          CALL cmake.exe -G "Visual Studio 16 2019" -A Win32
         make: |
           CALL cmake.exe --build . --config Release
       dependencies: []
@@ -109,4 +109,4 @@ platforms:
       patches: patches_windows
       required_tools:
         - cmake
-        - visualstudio=2017
+        - visualstudio=2019

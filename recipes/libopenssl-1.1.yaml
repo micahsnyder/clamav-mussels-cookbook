@@ -89,7 +89,7 @@ platforms:
       required_tools:
         - nasm
         - perl
-        - visualstudio>=2017
+        - visualstudio>=2019
     x86:
       build_script:
         configure: |
@@ -115,4 +115,4 @@ platforms:
       required_tools:
         - nasm
         - perl
-        - visualstudio>=2017
+        - visualstudio>=2019

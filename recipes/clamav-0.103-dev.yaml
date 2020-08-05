@@ -186,7 +186,7 @@ platforms:
         clamav/license:
           - COPYING*
       required_tools:
-        - visualstudio>=2017
+        - visualstudio>=2019
     x86:
       build_script:
         configure: |
@@ -249,4 +249,4 @@ platforms:
         clamav/license:
           - COPYING*
       required_tools:
-        - visualstudio>=2017
+        - visualstudio>=2019

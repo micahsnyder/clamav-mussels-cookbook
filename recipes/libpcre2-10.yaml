@@ -61,7 +61,7 @@ platforms:
     x64:
       build_script:
         configure: |
-          CALL cmake.exe -G "Visual Studio 15 2017" -A x64 \
+          CALL cmake.exe -G "Visual Studio 16 2019" -A x64 \
               -DBUILD_SHARED_LIBS=ON \
               -DZLIB_INCLUDE_DIR="{includes}" \
               -DZLIB_LIBRARY_RELEASE="{libs}/zlibstatic.lib" \
@@ -83,11 +83,11 @@ platforms:
       patches: libpcre2-10.35-patches
       required_tools:
         - cmake
-        - visualstudio=2017
+        - visualstudio=2019
     x86:
       build_script:
         configure: |
-          CALL cmake.exe -G "Visual Studio 15 2017" -A Win32 \
+          CALL cmake.exe -G "Visual Studio 16 2019" -A Win32 \
               -DBUILD_SHARED_LIBS=ON \
               -DZLIB_INCLUDE_DIR="{includes}" \
               -DZLIB_LIBRARY_RELEASE="{libs}/zlibstatic.lib" \
@@ -109,4 +109,4 @@ platforms:
       patches: libpcre2-10.33-patches
       required_tools:
         - cmake
-        - visualstudio=2017
+        - visualstudio=2019

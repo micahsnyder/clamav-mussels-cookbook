@@ -58,8 +58,7 @@ platforms:
     x64:
       build_script:
         configure: |
-          CALL vcvarsall.bat amd64
-          CALL cmake.exe -G "Visual Studio 15 2017 Win64"
+          CALL cmake.exe -G "Visual Studio 16 2019" -A x64
         make: |
           CALL cmake.exe --build . --config Release
       dependencies: []
@@ -73,12 +72,11 @@ platforms:
           - README
       required_tools:
         - cmake
-        - visualstudio=2017
+        - visualstudio=2019
     x86:
       build_script:
         configure: |
-          CALL vcvarsall.bat x86
-          CALL cmake.exe -G "Visual Studio 15 2017"
+          CALL cmake.exe -G "Visual Studio 16 2019" -A Win32
         make: |
           CALL cmake.exe --build . --config Release
       dependencies: []
@@ -92,4 +90,4 @@ platforms:
           - README
       required_tools:
         - cmake
-        - visualstudio=2017
+        - visualstudio=2019
